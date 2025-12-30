@@ -41,6 +41,9 @@ jobs:
       - name: test
         run: |
           npm test
+
+      - name: code-coverage
+        run: npm run coverage
       #- name: upload artifact (test result)
       - uses: actions/upload-artifact@v4
         with:
